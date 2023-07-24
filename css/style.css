@@ -1,0 +1,72 @@
+*{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+    
+    
+}
+
+h1{
+    margin: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 4px 0  #232931;
+    font-size: 8rem;
+    color:whitesmoke
+}
+
+h2{
+    font-size: 2rem;
+    color:whitesmoke
+    
+}
+
+h2.jog2{
+    color: red;
+}
+
+span{
+    color:red;
+}
+
+.countainer{
+    width: 70%;
+    margin: auto;
+    
+
+}
+
+
+.dice{
+    display:inline-block;
+   
+    
+}
+
+#rollButton{
+
+    color:white;
+    font-size: 1rem;;
+    font-weight:bolder;
+    background-color: #845EE9;
+    height: 4rem;
+    width:8rem;
+    border-radius: 10px;
+    
+}
+
+section{
+
+    padding-top: 50px;
+}
+
+img{
+    width: 80%;
+}
+
+footer{
+    margin-top: 5%;
+    color:white;
+    
+}
+

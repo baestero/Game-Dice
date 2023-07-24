@@ -1,0 +1,161 @@
+Copia de segurança algoritmo Game Dice
+
+Js.
+
+let randomNumber1 = Math.floor(Math.random() * 6) + 1
+
+let randomDiceImage = 'dice' + randomNumber1 + '.png'// que é dice2.png (ou numero aleatorio até 6)
+
+let randomImageSource = 'img/' + randomDiceImage // que é: img/dice2.png (ou numero aleatorio até 6)
+
+let image1 = document.querySelectorAll('img')[0] // esse é o index 0 que se trata do jogador 1 pois temos dois atributo img.
+
+image1.setAttribute('src',randomImageSource) // atribuiamos agora pelo dom a imagem no html
+
+
+
+let randomNumber2 = Math.floor(Math.random() * 6) + 1
+
+let randomImageSource2 = 'img/dice' + randomNumber2 + '.png' // simplicandoo código de cima porem é o mesmo.
+
+document.querySelectorAll('img')[1].setAttribute('src', randomImageSource2) //refatorado.
+
+
+if
+    (randomNumber1 > randomNumber2){
+
+    document.querySelector('h1').innerHTML = 'Jogador 1 Ganhou 🏆'
+}else if ((randomNumber2 > randomNumber1)){
+
+    document.querySelector('h1').innerHTML = 'Jogador 2 Ganhou 🏆'
+}else{
+
+    document.querySelector('h1').innerHTML = 'Empate'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HTML:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Dice</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+ 
+    <main class="countainer">
+
+    
+        <h1>Atualizar</h1>
+
+        <div class="dice">
+
+            <h2>Jogador 1</h2>
+            <img src="" alt="dados"/>
+
+        </div>
+
+        <div class="dice">
+
+            <h2>Jogador 2</h2>
+            <img src="" alt="dados"/>
+
+        </div>
+
+    </main>
+
+    <footer>
+        www. 🎲 bstr00_projects 🎲 .com.br
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+css:
+*{
+    background-color: black;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    
+    
+}
+
+h1{
+    margin: 30px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 4px 0  #232931;
+    font-size: 8rem;
+    color:#845EE9
+}
+
+h2{
+    font-size: 2rem;
+    color:#FF9202
+    
+}
+
+.countainer{
+    width: 70%;
+    margin: auto;
+
+}
+
+
+.dice{
+    display:inline-block;
+    
+}
+
+img{
+    width: 80%;
+}
+
+footer{
+    margin-top: 5%;
+    font-family: cursive;
+    color:white;
+    
+}
+
+
+
+
+
